@@ -1,0 +1,136 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>music 1</title>
+
+    <style>
+        .card {
+          box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+          transition: 0.3s;
+          width: 40%;
+          border-radius: 5px;
+        }
+        
+        .card:hover {
+          box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+        }
+        
+        .container {
+          padding: 2px 16px;
+        }
+        </style>
+</head>
+<body>
+    <script>
+
+const apiKey = 'aea61c096ec9b633546fbe7f3b66e648';
+
+// The method you want to call, for example 'artist.getinfo'
+const method = 'artist.getinfo';
+
+// The artist you want information about
+const artist = 'Radiohead';
+
+const url = `http://ws.audioscrobbler.com/2.0/?method=${method}&artist=${artist}&api_key=${apiKey}&format=json`;
+
+// Use fetch API to get data
+
+fetch(url)
+      .then(response => response.json())
+      .then(json => console.log(json))
+
+
+      const apiKey1 = 'aea61c096ec9b633546fbe7f3b66e648';
+
+// The method you want to call, for example 'artist.getinfo'
+const method1 = 'album.getinfo';
+
+// The artist you want information about
+const artist1 = 'Cher'; 
+
+const album1 = 'Believe';
+
+// Construct the URL for the API request
+const url1 = `http://ws.audioscrobbler.com/2.0/?method=${method1}&api_key=${apiKey1}&artist=${artist1}&album=${album1}&format=json`;
+
+fetch(url1)
+      .then(response => response.json())
+      .then(json => console.log(json))
+
+
+const apiKey2 = 'aea61c096ec9b633546fbe7f3b66e648';
+
+// The method you want to call, for example 'artist.getinfo'
+const method2 = 'user.getinfo';
+
+// The artist you want information about
+const user = 'rj'; 
+
+// Construct the URL for the API request
+const url2 = `http://ws.audioscrobbler.com/2.0/?method=${method2}&user=${user}&api_key=${apiKey2}&format=json`;
+fetch(url2)
+      .then(response => response.json())
+      .then(json => console.log(json))
+   
+      const apiKey3 = 'aea61c096ec9b633546fbe7f3b66e648';
+
+// The method you want to call, for example 'artist.getinfo'
+const method3 = 'library.getartists';
+
+// The artist you want information about
+const user2 = 'joanofarctan'; 
+
+// Construct the URL for the API request
+const url3 = `http://ws.audioscrobbler.com/2.0/?method=${method3}&api_key=${apiKey3}&user=${user2}&format=json`;
+fetch(url3)
+      .then(response => response.json())
+      .then(json => console.log(json))
+
+      const apiKey4 = 'aea61c096ec9b633546fbe7f3b66e648';
+
+// The method you want to call, for example 'artist.getinfo'
+const method4 = 'artist.gettopalbums';
+
+const artist2 ="cher"
+
+// The artist you want information about
+const user3 = 'joanofarctan'; 
+
+// Construct the URL for the API request
+const url4 = `http://ws.audioscrobbler.com/2.0/?method=${method4}&artist=${artist2}&api_key=${apiKey4}&format=json`;
+fetch(url4)
+      .then(response => response.json())
+      .then(json => console.log(json))
+
+
+
+     const apiKey5 = 'aea61c096ec9b633546fbe7f3b66e648';
+
+// The method you want to call, for example 'artist.getinfo'
+const method5 = 'geo.gettopartists';
+
+const country ="spain"
+
+// The artist you want information about
+
+
+// Construct the URL for the API request
+const url5 = `http://ws.audioscrobbler.com/2.0/?method=${method5}&country=${country}&api_key=${apiKey5}Y&format=json`;
+fetch(url5)
+      .then(response => response.json())
+      .then(json => console.log(json))
+      
+   </script>
+</body>
+</html>
+    
+</body>
+</html>
